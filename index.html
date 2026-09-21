@@ -1,246 +1,56 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f1eee5">
-  <meta name="description" content="台中親子職人體驗實驗：讓孩子跟真正會做事的人，親手完成一次真實體驗。">
-  <meta property="og:title" content="小小職人體驗｜台中親子體驗實驗">
-  <meta property="og:description" content="不是補習班，也不是才藝班。讓孩子跟真正的職人，親手做一次。">
-  <meta property="og:type" content="website">
-  <title>小小職人體驗｜台中親子體驗實驗</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div class="noise"></div>
-
-  <div class="announce">
-    <span>TAICHUNG · EXPERIENCE LAB</span>
-    <b>第一批台中職人 / 店家 / 創作者募集中</b>
-    <a href="#join">加入計畫 ↗</a>
-  </div>
-
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="回到頂部">
-      <span class="brand-mark">小</span>
-      <span>
-        <b>小小職人體驗</b>
-        <small>REAL PEOPLE · REAL SKILLS</small>
-      </span>
-    </a>
-    <nav>
-      <a href="#activities">活動總覽</a>
-      <a href="#how">怎麼運作</a>
-      <a href="#about">計畫理念</a><a href="./register.html">家長報名</a>
-      <a class="nav-cta" href="#join">我要參與</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero shell">
-      <div class="hero-copy">
-        <div class="eyebrow"><span></span> 台中 · 親子體驗實驗</div>
-        <h1>讓孩子跟<br><em>真的職人</em><br>做一次真的事</h1>
-        <p class="hero-lead">不是補習班，也不是才藝班。我們想把台中真正會做事的人，和想看見真實世界的孩子連在一起。</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#activities">瀏覽可報名活動 <span>↓</span></a>
-          <a class="btn ghost" href="#join">我是職人 / 店家</a>
-        </div>
-        <div class="truth-note"><b>目前狀態：</b>第一階段招募與媒合。下方內容是「體驗提案池」，尚未確認的日期、費用、名額都會清楚標示，不會假裝已開課。</div>
-      </div>
-
-      <div class="hero-board" aria-hidden="true">
-        <div class="board-label">TAICHUNG / 2026</div>
-        <div class="board-title">HANDS<br>ON</div>
-        <div class="board-orbit orbit-a">木工</div>
-        <div class="board-orbit orbit-b">咖啡</div>
-        <div class="board-orbit orbit-c">修車</div>
-        <div class="board-orbit orbit-d">陶藝</div>
-        <div class="board-orbit orbit-e">攝影</div>
-        <div class="board-stamp">MAKE<br>IT<br>REAL</div>
-      </div>
-    </section>
-
-    <section class="metric-strip">
-      <div class="shell metrics">
-        <div><b>10</b><span>目前體驗方向</span></div>
-        <div><b>01</b><span>城市｜台中</span></div>
-        <div><b>∞</b><span>等待被看見的專長</span></div>
-        <div><b>1×</b><span>先做一次再說</span></div>
-      </div>
-    </section>
-
-    <section id="activities" class="section shell">
-      <div class="section-head">
-        <div>
-          <div class="section-kicker">ACTIVITY BOARD / 活動總覽</div>
-          <h2>先看看，孩子可以<br>親手遇見什麼</h2>
-        </div>
-        <p>家長可以直接從活動卡進入獨立報名頁，選擇想參加的體驗並填寫孩子與聯絡資料。尚未確認的正式日期與地點仍會清楚標示。</p>
-      </div>
-
-      <div class="fixed-venue-list">
-        <a class="fixed-venue" href="./register.html?activity=dingwei-cupping">
-          <div class="fixed-venue-badge">固定據點</div>
-          <div class="fixed-venue-main">
-            <small>PERMANENT VENUE · 丁威咖啡</small>
-            <h3>☕ 咖啡杯測體驗課</h3>
-            <p>2 小時｜一組 NT$1,000｜杯測流程、聞香瓶、杯測表，並附贈杯測專用湯匙</p>
-          </div>
-          <div class="fixed-venue-action">常駐活動<br><b>立即報名 →</b></div>
-        </a>
-
-        <a class="fixed-venue glass-venue" href="./register.html?activity=dingwei-glass">
-          <div class="fixed-venue-badge">固定據點</div>
-          <div class="fixed-venue-main">
-            <small>PERMANENT VENUE · 丁威咖啡</small>
-            <h3>🪟 玻璃拼貼藝術課</h3>
-            <p>3 小時｜一組 NT$2,000｜玻璃剪裁、配色設計、銅線焊接與特殊技法</p>
-          </div>
-          <div class="fixed-venue-action">常駐活動<br><b>立即報名 →</b></div>
-        </a>
-      </div>
-
-      <div class="activity-toolbar">
-        <div class="search-wrap">
-          <span>⌕</span>
-          <input id="activitySearch" type="search" placeholder="搜尋木工、咖啡、攝影…">
-        </div>
-        <div class="filters" id="filters" role="group" aria-label="活動分類"></div>
-      </div>
-
-      <div class="activity-count" id="activityCount"></div>
-      <div class="experience-grid" id="experienceGrid"></div>
-      <div class="empty-state" id="emptyState" hidden>目前沒有符合條件的體驗方向</div>
-    </section>
-
-    <section id="how" class="section process-wrap">
-      <div class="shell">
-        <div class="section-kicker light">HOW IT WORKS / 怎麼運作</div>
-        <div class="process-head">
-          <h2>先找到人，再一起<br>把體驗做對</h2>
-          <p>這不是先排滿課表，而是先找到值得認識的人，再一起把「專業」翻譯成孩子能安全參與的體驗。</p>
-        </div>
-        <div class="process-grid">
-          <article><span>01</span><b>找到真實職人</b><p>店家、師傅、創作者、農夫、技師都可以，不要求你先是老師。</p></article>
-          <article><span>02</span><b>設計一次體驗</b><p>挑一個孩子可以觀察、動手、完成的小任務，不追求把整套專業教完。</p></article>
-          <article><span>03</span><b>確認安全條件</b><p>場地、工具、年齡、家長陪同、風險與保險等事項會在正式公布前確認。</p></article>
-          <article><span>04</span><b>小規模開放</b><p>確認合作後才公布正式日期、價格、名額與報名方式。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section shell philosophy">
-      <div class="philosophy-quote">
-        <div class="section-kicker">WHY / 為什麼做</div>
-        <blockquote>「孩子需要的不只是被教，<br>而是有機會看見<br><em>大人怎麼真的把事情做好</em>。」</blockquote>
-      </div>
-      <div class="philosophy-copy">
-        <p>課本可以告訴孩子木頭、咖啡、汽車、陶土是什麼，但真正的工作現場會讓他知道：一件事情為什麼需要判斷、耐心、手感、經驗與責任。</p>
-        <p>我們想留下的不是「上過一堂課」，而是一個具體記憶：我曾經跟一個很會做這件事的人，一起做過一次。</p>
-        <div class="principles">
-          <span>真實職業</span><span>親手完成</span><span>小型體驗</span><span>安全適齡</span><span>不假裝開課</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="manifesto">
-      <div class="shell manifesto-inner">
-        <small>CALLING ALL MAKERS IN TAICHUNG</small>
-        <p>你不一定要會教小孩。<br>你只要<span>真的很會做一件事</span>。</p>
-        <a href="#join">把你的專長打開一點點 ↘</a>
-      </div>
-    </section>
-
-    <section id="join" class="section shell join">
-      <div class="join-copy">
-        <div class="section-kicker">JOIN / 參與計畫</div>
-        <h2>你是哪一種<br>參與者？</h2>
-        <p>目前先收集兩種需求：一種是「我有專長可以分享」，另一種是「我是家長，我想知道之後有哪些體驗」。</p>
-
-        <div class="role-tabs" role="tablist">
-          <button class="role-tab active" data-role="maker" type="button">我是職人 / 店家</button>
-          <button class="role-tab" data-role="parent" type="button">我是家長</button>
-        </div>
-
-        <div class="role-copy active" data-role-copy="maker">
-          <b>適合你，如果你：</b>
-          <span>✓ 在台中有真實專長或工作經驗</span>
-          <span>✓ 願意讓孩子看見工作怎麼發生</span>
-          <span>✓ 有安全合法的場地，或願意一起找方案</span>
-          <span>✓ 現在只想先聊，不想立刻承諾開課</span>
-        </div>
-        <div class="role-copy" data-role-copy="parent">
-          <b>適合你，如果你：</b>
-          <span>✓ 想收到之後的正式場次資訊</span>
-          <span>✓ 有孩子想體驗的職業或技能</span>
-          <span>✓ 願意告訴我們孩子年齡與興趣</span>
-          <span>✓ 理解目前仍在第一階段媒合中</span>
-        </div>
-      </div>
-
-      <div class="join-panel">
-        <form id="makerForm" class="join-form active" data-form-role="maker">
-          <div class="form-top"><div><small>MAKER</small><b>分享你的專長</b></div><span>產生可直接私訊的文字</span></div>
-          <div class="form-grid">
-            <label>怎麼稱呼？<input name="name" placeholder="小林 / 某某工作室" required></label>
-            <label>台中哪一區？<input name="area" placeholder="西區 / 北屯 / 豐原"></label>
-          </div>
-          <label>你最擅長什麼？<input name="skill" placeholder="木工、烘焙、修車、攝影…" required></label>
-          <label>孩子可以親手做什麼？<textarea name="idea" rows="4" placeholder="例如：自己打磨木料，做成一個小托盤"></textarea></label>
-          <button class="btn primary wide" type="submit">產生職人私訊 <span>→</span></button>
-          <p class="form-hint">不會上傳或儲存資料，只在你的裝置上產生文字並複製。</p>
-        </form>
-
-        <form id="parentForm" class="join-form" data-form-role="parent">
-          <div class="form-top"><div><small>PARENT</small><b>告訴我們孩子想體驗什麼</b></div><span>產生可直接私訊的文字</span></div>
-          <div class="form-grid">
-            <label>怎麼稱呼？<input name="name" placeholder="例如：林媽媽 / 陳爸爸" required></label>
-            <label>孩子年齡？<input name="age" placeholder="例如：8 歲"></label>
-          </div>
-          <label>最想體驗哪一類？<input name="interest" placeholder="木工、農場、修車、咖啡、攝影…" required></label>
-          <label>還有什麼期待？<textarea name="note" rows="4" placeholder="例如：希望是週末、家長可以陪同"></textarea></label>
-          <button class="btn primary wide" type="submit">產生家長私訊 <span>→</span></button>
-          <p class="form-hint">目前不是正式報名，只是蒐集興趣與需求。</p>
-        </form>
-      </div>
-    </section>
-
-    <section class="section shell faq">
-      <div class="section-head faq-head">
-        <div><div class="section-kicker">FAQ / 常見問題</div><h2>先把重要的<br>事情說清楚</h2></div>
-      </div>
-      <details><summary>現在可以直接報名活動嗎？ <span>＋</span></summary><p>目前還在第一階段的職人招募與活動設計。等合作對象、場地、安全規劃與場次資訊確認後，才會標示為正式開放報名。</p></details>
-      <details><summary>職人一定要有教學經驗嗎？ <span>＋</span></summary><p>不用。核心條件是真實專長與願意分享。如何轉成孩子能參與的流程，可以一起設計。</p></details>
-      <details><summary>會向職人收費嗎？ <span>＋</span></summary><p>目前第一階段以認識與媒合為主，不向你收取「加入計畫」費用。未來若有正式合作、材料、場地或活動成本，會在確認前清楚討論。</p></details>
-      <details><summary>孩子碰工具會不會有安全問題？ <span>＋</span></summary><p>正式活動前會依內容評估適齡操作、家長陪同、工具替代方案、場地規範與必要的風險管理。未完成安全確認的內容不會直接對外開放。</p></details>
-    </section>
-  </main>
-
-  <footer>
-    <div class="shell footer-inner">
-      <div><b>小小職人體驗</b><span>TAICHUNG · EXPERIENCE LAB</span></div>
-      <p>把台中真正會做事的人，介紹給下一代。</p>
-      <button id="shareBtn" class="share-btn" type="button">分享這個計畫 ↗</button>
-    </div>
-  </footer>
-
-  <dialog id="activityDialog" class="activity-dialog">
-    <button class="dialog-close" data-close="activity" aria-label="關閉">×</button>
-    <div id="activityDialogContent"></div>
-  </dialog>
-
-  <dialog id="messageDialog" class="message-dialog">
-    <button class="dialog-close" data-close="message" aria-label="關閉">×</button>
-    <small>MESSAGE READY</small>
-    <h3>已幫你整理成一段私訊</h3>
-    <textarea id="generatedMessage" rows="10" readonly></textarea>
-    <button class="btn primary wide" id="copyAgain" type="button">再複製一次</button>
-  </dialog>
-
-  <script src="./app.js"></script>
-</body>
-</html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f5ef">
+<meta name="description" content="在台中，和真正的職人一起做一次真的事。探索親子手作、咖啡、玻璃藝術與更多職人體驗。">
+<meta property="og:title" content="小小職人體驗｜讓好奇，成為親手做過的事"><meta property="og:description" content="把台中真正會做事的人，介紹給下一代。"><meta property="og:type" content="website"><meta property="og:image" content="https://xieyaozhong.github.io/Mr.yu/assets/hero-workshop.webp"><meta name="twitter:card" content="summary_large_image">
+<title>小小職人體驗｜台中親子體驗實驗</title>
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head><body>
+<a class="skip-link" href="#activities">跳至活動總覽</a>
+<div class="announce"><span>TAICHUNG EXPERIENCE LAB</span><p>把你的專長，變成孩子看見世界的窗口。</p><a href="#join">職人招募中 <span data-icon="arrow-up-right"></span></a></div>
+<header class="site-header">
+<a class="brand" href="#top" aria-label="小小職人體驗首頁"><span class="brand-mark" data-icon="mark"></span><span><b>小小職人體驗</b><small>THE LITTLE MAKERS</small></span></a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="開啟導覽選單" aria-controls="siteNav" aria-expanded="false"><span data-icon="menu"></span></button>
+<nav id="siteNav" aria-label="主要導覽"><a href="#activities">探索體驗</a><a href="#how">體驗怎麼開始</a><a href="#about">關於計畫</a><a href="./register.html">家長報名</a><a class="nav-cta" href="#join">成為合作職人 <span data-icon="arrow-up-right"></span></a></nav>
+</header><main id="top">
+<section class="hero shell" aria-labelledby="heroTitle"><div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> 在台中，打開真實世界的第一扇門</div><h1 id="heroTitle">讓好奇，<br>成為<em>親手做過</em><br>的事。</h1><p class="hero-lead">跟著真正的職人，認識一門手藝。<br>從一雙小手開始，把世界變得具體。</p><div class="hero-actions"><a class="btn primary" href="#activities">探索職人體驗 <span data-icon="arrow-up-right"></span></a><a class="text-link" href="#about">認識這個計畫 <span data-icon="arrow-right"></span></a></div><div class="hero-footnote"><span data-icon="location"></span><span>台中出發</span><i></i><span>真實職人</span><i></i><span>親子一起參與</span></div></div>
+<figure class="hero-visual"><div class="hero-image-wrap"><img src="./assets/hero-workshop.webp" alt="暖陽照進工作桌，照亮手作陶器、木盤、彩色玻璃與咖啡的職人創作意象" width="960" height="1200" fetchpriority="high"></div><span class="hero-image-note">CRAFT · CURIOSITY · CONNECTION</span><figcaption class="hero-caption"><span class="caption-index">01 / A WORLD TO DISCOVER</span><p>有些成長，<br>從「我也想試試看」開始。</p><span data-icon="arrow-up-right"></span></figcaption></figure></section>
+<section class="intro-strip" aria-label="計畫特色"><div class="shell intro-inner"><p>小小的體驗，<br><strong>大大的真實世界。</strong></p><div><b>10</b><span>體驗方向<br><small>WAYS TO EXPLORE</small></span></div><div><b>02</b><span>固定據點常駐活動<br><small>RESIDENT EXPERIENCES</small></span></div><div><b>01</b><span>從台中開始的計畫<br><small>OUR CITY, OUR CRAFT</small></span></div></div></section>
+<section id="activities" class="section shell"><div class="section-head"><div><div class="section-kicker">01 / EXPLORE THE POSSIBILITIES</div><h2>下一次好奇，<br>想從哪裡開始？</h2></div><p>一杯咖啡、一片玻璃、一塊木頭。<br>讓日常裡的專業，成為孩子認識世界的起點。</p></div>
+<div class="subsection-head"><h3><span class="status-dot"></span> 已有固定據點的體驗</h3><span>丁威咖啡 · 日期於報名後協調</span></div>
+<div class="fixed-venue-list">
+<a class="fixed-venue coffee-venue" href="./register.html?activity=dingwei-cupping"><div class="venue-art coffee-art"><span data-icon="coffee"></span><small>COFFEE<br>& SENSES</small></div><div class="fixed-venue-main"><span class="fixed-venue-badge">常駐體驗</span><h3>咖啡杯測體驗課</h3><p>從聞香到風味描述，<br>練習感受一杯咖啡的細節。</p><div class="venue-meta"><span>2 小時</span><span>一組 NT$1,000</span></div><span class="venue-cta">查看與報名 <span data-icon="arrow-up-right"></span></span></div></a>
+<a class="fixed-venue glass-venue" href="./register.html?activity=dingwei-glass"><div class="venue-art glass-art"><span data-icon="glass"></span><small>COLOR<br>& LIGHT</small></div><div class="fixed-venue-main"><span class="fixed-venue-badge">常駐體驗</span><h3>玻璃拼貼藝術課</h3><p>讓光穿過自己的配色，<br>完成一件生活裡的玻璃作品。</p><div class="venue-meta"><span>3 小時</span><span>一組 NT$2,000</span></div><span class="venue-cta">查看與報名 <span data-icon="arrow-up-right"></span></span></div></a>
+</div>
+<div class="catalog-heading"><h3>全部體驗方向</h3><p>常駐活動可報名；其餘方向開放興趣登記，合作與場次確認後另行公告。</p></div>
+<div class="activity-toolbar"><div class="filters" id="filters" role="group" aria-label="活動分類"></div><div class="search-wrap"><span data-icon="search"></span><input id="activitySearch" aria-label="搜尋體驗活動" type="search" placeholder="搜尋感興趣的體驗"></div></div>
+<div class="activity-count" id="activityCount" role="status" aria-live="polite"></div><div class="experience-grid" id="experienceGrid"></div><div class="empty-state" id="emptyState" hidden><span data-icon="search"></span><h3>還沒找到這個體驗</h3><p>試試其他關鍵字，或切換活動分類。</p></div><noscript><p>請啟用 JavaScript 以使用活動搜尋與詳情，也可透過上方連結查看常駐活動。</p></noscript></section>
+<section id="how" class="section process-wrap"><div class="shell"><div class="section-kicker light">02 / FROM PEOPLE TO POSSIBILITIES</div><div class="process-head"><h2>一次好的體驗，<br>從認識一位職人開始。</h2><p>先找到值得認識的人，再一起把專業<br>轉化為孩子能安全參與的小小任務。</p></div><div class="process-grid">
+<article><div class="process-top"><span>01</span><span data-icon="tools"></span></div><h3>找到真實職人</h3><p>店家、師傅、創作者、農夫、技師。你有專長，也願意打開工作日常。</p></article>
+<article><div class="process-top"><span>02</span><span data-icon="wood"></span></div><h3>設計一次體驗</h3><p>一起挑一個孩子能觀察、動手、完成的小任務，留下一份真實成就感。</p></article>
+<article><div class="process-top"><span>03</span><span data-icon="shield"></span></div><h3>確認參與條件</h3><p>依內容確認場地、工具、適齡範圍、家長陪同與必要的安全安排。</p></article>
+<article><div class="process-top"><span>04</span><span data-icon="sprout"></span></div><h3>讓體驗發生</h3><p>合作確認後，清楚公布日期、費用、名額與方式，從小規模開始。</p></article>
+</div></div></section>
+<section id="about" class="section shell philosophy"><div class="philosophy-quote"><div class="section-kicker">03 / THE IDEA BEHIND IT</div><span class="quote-mark" aria-hidden="true">“</span><blockquote>孩子需要的不只是被教，<br>而是有機會看見，<br><em>大人怎麼把事情做好。</em></blockquote><span class="quote-attribution">小小職人體驗的起點</span></div><div class="philosophy-copy"><h3>把台中真正會做事的人，<br>介紹給下一代。</h3><p>課本可以告訴孩子木頭、咖啡、汽車、陶土是什麼。真實的工作現場，則讓他知道：做好一件事，需要判斷、耐心、手感、經驗與責任。</p><p>我們想留下的，是一個具體的記憶：<br>「我曾經跟一個很會做這件事的人，一起做過一次。」</p><div class="principles"><span>真實職業</span><span>親手完成</span><span>小型體驗</span><span>安全適齡</span></div></div></section>
+<section class="manifesto"><div class="shell manifesto-inner"><div><small>A LITTLE OF YOUR CRAFT. A WORLD OF DIFFERENCE.</small><p>你很會做的那件事，<br>也許就是孩子的<em>第一扇窗。</em></p></div><a class="manifesto-link" href="#join" aria-label="加入職人合作計畫"><span data-icon="arrow-up-right"></span></a></div></section>
+<section id="join" class="section shell join"><div class="join-copy"><div class="section-kicker">04 / LET'S MAKE SOMETHING REAL</div><h2>下一個故事，<br>我們一起開始。</h2><p>分享你的專長，或告訴我們孩子的好奇。<br>不必立刻決定，先從一次對話開始。</p><div class="role-tabs" role="tablist" aria-label="參與身分"><button class="role-tab active" data-role="maker" type="button">我是職人 / 店家</button><button class="role-tab" data-role="parent" type="button">我是家長</button></div>
+<div class="role-copy active" data-role-copy="maker"><b>如果你也期待：</b><span><span data-icon="check"></span>分享在台中的真實專長與工作經驗</span><span><span data-icon="check"></span>讓孩子看見工作如何發生</span><span><span data-icon="check"></span>一起討論適合的場地與體驗方式</span><span><span data-icon="check"></span>先認識彼此，再決定是否合作</span></div><div class="role-copy " data-role-copy="parent"><b>從孩子的好奇開始：</b><span><span data-icon="check"></span>了解未來的正式體驗場次</span><span><span data-icon="check"></span>分享孩子想探索的職業或技能</span><span><span data-icon="check"></span>告訴我們孩子的年齡與興趣</span><span><span data-icon="check"></span>一起等待合適的職人與體驗</span></div>
+</div><div class="join-panel">
+<form id="makerForm" class="join-form active" data-form-role="maker"><div class="form-top"><div><small>FOR THE MAKERS</small><h3>讓我們認識你的專長</h3></div><span data-icon="tools"></span></div><div class="form-grid"><label>怎麼稱呼你？<input name="name" autocomplete="name" placeholder="姓名或工作室名稱" required></label><label>在台中哪一區？<input name="area" placeholder="例如：西區、北屯、豐原"></label></div><label>你最擅長什麼？<input name="skill" placeholder="木工、烘焙、修車、攝影…" required></label><label>想讓孩子親手嘗試什麼？<textarea name="idea" rows="4" placeholder="例如：從認識木頭開始，一起打磨一個小托盤。"></textarea></label><button class="btn primary wide" type="submit">整理我的合作提案 <span data-icon="arrow-right"></span></button><p class="form-hint">將產生可複製的私訊文字，資料不會上傳或儲存。</p></form>
+<form id="parentForm" class="join-form" data-form-role="parent"><div class="form-top"><div><small>FOR THE CURIOUS FAMILIES</small><h3>孩子對什麼充滿好奇？</h3></div><span data-icon="sprout"></span></div><div class="form-grid"><label>怎麼稱呼你？<input name="name" autocomplete="name" placeholder="例如：林媽媽、陳爸爸" required></label><label>孩子幾歲？<input name="age" placeholder="例如：8 歲"></label></div><label>最想探索的體驗？<input name="interest" placeholder="木工、農場、汽修、咖啡…" required></label><label>還有哪些期待？<textarea name="note" rows="4" placeholder="例如：希望安排在週末，家長可以一起參與。"></textarea></label><button class="btn primary wide" type="submit">整理我的體驗期待 <span data-icon="arrow-right"></span></button><p class="form-hint">將產生可複製的私訊文字，此表單為興趣回饋。</p></form>
+</div></section>
+<section class="section shell faq"><div class="faq-heading"><div class="section-kicker">A FEW THINGS TO KNOW</div><h2>開始之前，<br>你可能想知道。</h2><p>讓每一次參與，都更安心、清楚。</p></div><div class="faq-list">
+<details><summary>現在可以直接報名活動嗎？<span data-icon="plus"></span></summary><p>丁威咖啡的咖啡杯測與玻璃拼貼藝術課為常駐體驗，可進入家長報名頁建立資料，日期於報名後協調。其餘體驗方向仍在媒合，開放興趣登記；正式場次將待職人、場地與安全規劃確認後公告。報名頁會清楚標示資料是否已送至主辦方。</p></details>
+<details><summary>職人一定要有教學經驗嗎？<span data-icon="plus"></span></summary><p>不用。核心條件是真實專長與願意分享。如何轉成孩子能參與的流程，可以一起設計。</p></details>
+<details><summary>加入計畫會向職人收費嗎？<span data-icon="plus"></span></summary><p>目前第一階段以認識與媒合為主，不收取加入計畫的費用。未來若有正式合作、材料、場地或活動成本，會在確認前清楚討論。</p></details>
+<details><summary>如何安排孩子的工具操作與安全？<span data-icon="plus"></span></summary><p>正式活動前會依內容評估適齡操作、家長陪同、工具替代方案、場地規範與必要的風險管理。未完成安全確認的內容不會直接對外開放。</p></details>
+</div></section></main>
+<footer><div class="shell footer-main"><a class="brand" href="#top"><span class="brand-mark" data-icon="mark"></span><span><b>小小職人體驗</b><small>THE LITTLE MAKERS</small></span></a><p>真實的人，真實的手藝。<br>讓孩子的世界，再打開一點。</p><button id="shareBtn" class="share-btn" type="button">分享這個計畫 <span data-icon="arrow-up-right"></span></button></div><div class="shell footer-bottom"><span>TAICHUNG EXPERIENCE LAB</span><span>從台中開始，與好奇同行。</span></div></footer>
+<dialog id="activityDialog" class="activity-dialog" aria-label="活動詳細資訊"><button class="dialog-close" data-close="activity" type="button" aria-label="關閉活動詳情"><span data-icon="close"></span></button><div id="activityDialogContent"></div></dialog>
+<dialog id="messageDialog" class="message-dialog" aria-labelledby="messageTitle"><button class="dialog-close" data-close="message" type="button" aria-label="關閉私訊視窗"><span data-icon="close"></span></button><small>READY TO CONNECT</small><h3 id="messageTitle">把想法，變成對話的開始。</h3><label class="sr-only" for="generatedMessage">產生的私訊文字</label><textarea id="generatedMessage" rows="10" readonly></textarea><button class="btn primary wide" id="copyAgain" type="button">複製私訊文字 <span data-icon="copy"></span></button></dialog>
+<script src="./icons.js"></script><script src="./app.js"></script></body></html>
