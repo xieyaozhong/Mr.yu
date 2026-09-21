@@ -1,5 +1,6 @@
 const REGISTRATION_ENDPOINT = "";
 const activities = [
+  {id:"dingwei-cupping",icon:"☕",title:"咖啡杯測體驗課",cat:"飲食",desc:"在丁威咖啡進行 2 小時親子杯測體驗：杯測流程、聞香瓶、風味描述、杯測表，並附贈杯測專用湯匙。",area:"丁威咖啡｜固定據點",date:"常駐活動｜報名後協調日期",price:"一組 NT$1,000",age:"親子參與｜依現場安全安排",status:"常駐活動・開放報名",duration:"2 小時",notice:"咖啡液入口感受後吐入杯中，不以吞飲為活動目的。"},
   {id:"wood",icon:"🪵",title:"小小木工職人體驗",cat:"手作",desc:"從木材、工具與打磨開始，讓孩子看見一件木作如何從材料變成作品。",area:"台中｜地點確認後通知",date:"第一批體驗｜日期確認後通知",price:"第一批體驗暫不收費",age:"依活動內容確認",status:"開放報名"},
   {id:"coffee",icon:"☕",title:"一杯咖啡怎麼來",cat:"飲食",desc:"從咖啡豆、香氣、研磨到沖煮，理解咖啡師每天如何做判斷。",area:"台中｜地點確認後通知",date:"第一批體驗｜日期確認後通知",price:"第一批體驗暫不收費",age:"建議親子陪同",status:"開放報名"},
   {id:"auto",icon:"🔧",title:"汽車裡面到底有什麼",cat:"技術",desc:"打開引擎室、看輪胎與基本零件，理解汽車如何工作。",area:"台中｜合作場地確認後通知",date:"第一批體驗｜日期確認後通知",price:"第一批體驗暫不收費",age:"依場地與安全條件確認",status:"開放報名"},
@@ -12,7 +13,7 @@ const activities = [
 
 const params=new URLSearchParams(location.search);
 let activity=activities.find(x=>x.id===params.get("activity"))||activities[0];
-let state={step:1,activity:activity.id,session:"第一批體驗｜日期確認後通知"};
+let state={step:1,activity:activity.id,session:activity.date};
 
 const summary=document.querySelector("#registerSummary");
 const app=document.querySelector("#registrationApp");
@@ -33,7 +34,9 @@ function updateSummary(){
       <div><small>地點</small><b>${a.area}</b></div>
       <div><small>費用</small><b>${a.price}</b></div>
       <div><small>建議年齡</small><b>${a.age}</b></div>
-    </div>`;
+      ${a.duration?`<div><small>時長</small><b>${a.duration}</b></div>`:""}
+    </div>
+    ${a.notice?`<div class="registration-mode" style="margin-top:18px"><b>杯測提醒</b><br>${a.notice}</div>`:""}`;
 }
 
 function render(){
@@ -45,11 +48,11 @@ function render(){
         <select id="activitySelect">${activities.map(a=>`<option value="${a.id}" ${a.id===state.activity?"selected":""}>${a.icon} ${a.title}</option>`).join("")}</select>
       </label>
       <label>場次
-        <select id="sessionSelect"><option>第一批體驗｜日期確認後通知</option></select>
+        <select id="sessionSelect"><option>${activityById(state.activity).date}</option></select>
       </label>
-      <div class="registration-mode"><b>第一批體驗報名</b><br>目前部分活動仍在確認合作職人、日期與場地。你可以先完成報名資料，正式資訊確認後再通知你是否成團與最終場次。</div>
+      <div class="registration-mode"><b>${activityById(state.activity).status==="常駐活動・開放報名"?"固定據點常駐活動":"第一批體驗報名"}</b><br>${activityById(state.activity).id==="dingwei-cupping"?"此活動固定於丁威咖啡舉行，完成報名後再協調實際日期。費用為一組 NT$1,000，時長約 2 小時。":"目前部分活動仍在確認合作職人、日期與場地。你可以先完成報名資料，正式資訊確認後再通知你是否成團與最終場次。"}</div>
       <div class="reg-actions"><a class="btn secondary" href="./index.html#activities">返回</a><button class="btn primary" id="next1">下一步 →</button></div>`;
-    document.querySelector("#activitySelect").onchange=e=>{state.activity=e.target.value;updateSummary()};
+    document.querySelector("#activitySelect").onchange=e=>{state.activity=e.target.value;state.session=activityById(state.activity).date;render()};
     document.querySelector("#next1").onclick=()=>setStep(2);
   } else if(state.step===2){
     app.innerHTML=`
