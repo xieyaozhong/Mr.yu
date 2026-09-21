@@ -1,4 +1,5 @@
 const activities = [
+  {id:"dingwei-cupping",icon:"☕",title:"咖啡杯測體驗課",cat:"飲食",status:"常駐活動",desc:"在丁威咖啡完成一套完整、適合親子參與的杯測體驗：認識杯測流程、聞香瓶、風味描述與杯測表，並附贈一支杯測專用湯匙。",task:"杯測流程 → 聞香瓶體驗 → 建立風味詞彙 → 實際杯測 → 寫杯測表。活動中的咖啡液以口腔感受為主，之後吐入杯中，不以吞飲為活動目的。",partner:"丁威咖啡｜固定據點",area:"丁威咖啡",age:"親子參與｜依現場安全安排",date:"常駐活動｜報名後協調日期",price:"一組 NT$1,000",duration:"2 小時",meaning:"透過嗅覺辨識、風味比較與語言描述練習，幫助孩子把感官經驗和詞彙建立更細緻的連結，練習更精準地描述自己聞到與感受到的差異。",note:"杯測時不以吞飲咖啡為目的，咖啡液入口感受後會吐入杯中；家長如對咖啡因、過敏或其他健康因素有疑慮，可在報名前先與主辦方確認。",tags:["固定據點","2HR","一組1000","附杯測湯匙"]},
   {id:"wood",icon:"🪵",title:"小小木工職人體驗",cat:"手作",status:"招募職人",desc:"從木材、工具與打磨開始，讓孩子看見一件木作如何從材料變成可以使用的作品。",task:"在安全工具與成人協助下，完成一件簡單木作或木料加工小任務。",partner:"木工師傅／木作工作室",area:"台中｜合作地點待確認",age:"年齡依內容調整",date:"媒合後公告",price:"合作確認後公告",tags:["工具","材料","作品"]},
   {id:"coffee",icon:"☕",title:"一杯咖啡怎麼來",cat:"飲食",status:"招募職人",desc:"從咖啡豆、香氣、研磨到沖煮，理解咖啡師每天其實在做哪些判斷。",task:"聞不同咖啡香氣、觀察研磨與沖煮，完成一個適齡的感官體驗。",partner:"咖啡師／咖啡店",area:"台中｜合作地點待確認",age:"親子陪同較適合",date:"媒合後公告",price:"合作確認後公告",tags:["感官","風味","沖煮"]},
   {id:"auto",icon:"🔧",title:"汽車裡面到底有什麼",cat:"技術",status:"招募職人",desc:"打開引擎室、看輪胎與基本零件，讓孩子第一次理解每天坐的車怎麼工作。",task:"由技師帶領辨識安全可接觸的零件，完成一張『我的第一張汽車檢查表』。",partner:"汽修技師／保養廠",area:"台中｜合作地點待確認",age:"年齡依場地調整",date:"媒合後公告",price:"合作確認後公告",tags:["機械","觀察","安全"]},
@@ -69,9 +70,12 @@ function openActivity(id){
       <div><small>日期</small><b>${item.date}</b></div>
       <div><small>費用</small><b>${item.price}</b></div>
       <div><small>目前狀態</small><b>${item.status}</b></div>
+      ${item.duration?`<div><small>時長</small><b>${item.duration}</b></div>`:""}
     </div>
-    <div class="detail-task"><small>我們想讓孩子完成</small><p>${item.task}</p></div>
-    <p class="detail-safety">正式活動只會在合作職人、場地、工具、適齡條件與必要安全事項確認後公開。這張卡目前是體驗提案，不是正式開課資訊。</p>
+    <div class="detail-task"><small>體驗內容</small><p>${item.task}</p></div>
+    ${item.meaning?`<div class="detail-meaning"><small>這堂體驗想帶給孩子什麼</small><p>${item.meaning}</p></div>`:""}
+    ${item.note?`<div class="detail-note"><small>家長提醒</small><p>${item.note}</p></div>`:""}
+    <p class="detail-safety">${item.status==="常駐活動"?"此活動為固定據點常駐體驗，實際日期依報名後協調為準。":"正式活動只會在合作職人、場地、工具、適齡條件與必要安全事項確認後公開。這張卡目前是體驗提案，不是正式開課資訊。"}</p>
     <a class="btn primary wide" href="./register.html?activity=${item.id}">立即進入家長報名 →</a>`;
   activityDialog.showModal();
 }
