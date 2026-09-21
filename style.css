@@ -91,3 +91,17 @@ dialog{width:min(610px,calc(100% - 26px));border:0;border-radius:24px;padding:30
 .reg-ticket{margin-top:16px;border:1px dashed var(--line);border-radius:16px;padding:16px;text-align:left}
 .reg-ticket small{font-size:9px;opacity:.5}.reg-ticket b{display:block;margin-top:4px}
 @media(max-width:820px){.register-layout{grid-template-columns:1fr}.register-summary{position:relative;top:auto;min-height:auto}.reg-grid,.reg-choice{grid-template-columns:1fr}}
+
+.fixed-venue{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;background:#2f5545;color:#fff;border-radius:22px;padding:22px 24px;margin:0 0 28px;box-shadow:var(--shadow);transition:.2s ease}
+.fixed-venue:hover{transform:translateY(-3px)}
+.fixed-venue-badge{background:var(--lime);color:var(--ink);font-size:10px;font-weight:900;padding:8px 10px;border-radius:999px;white-space:nowrap}
+.fixed-venue-main small{font:700 9px "DM Sans";letter-spacing:.15em;color:var(--lime)}
+.fixed-venue-main h3{font-size:25px;margin:5px 0 4px}
+.fixed-venue-main p{font-size:11px;line-height:1.7;margin:0;color:rgba(255,255,255,.7)}
+.fixed-venue-action{text-align:right;font-size:10px;color:rgba(255,255,255,.62)}
+.fixed-venue-action b{display:block;color:#fff;font-size:12px;margin-top:5px}
+.detail-meaning,.detail-note{border-radius:14px;padding:16px;margin-top:10px}
+.detail-meaning{background:#eef5d5}.detail-note{background:#fff1df}
+.detail-meaning small,.detail-note small{font-size:9px;opacity:.55}
+.detail-meaning p,.detail-note p{font-size:12px;line-height:1.8;margin:6px 0 0}
+@media(max-width:640px){.fixed-venue{grid-template-columns:1fr;gap:12px}.fixed-venue-action{text-align:left}}
