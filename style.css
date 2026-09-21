@@ -105,3 +105,9 @@ dialog{width:min(610px,calc(100% - 26px));border:0;border-radius:24px;padding:30
 .detail-meaning small,.detail-note small{font-size:9px;opacity:.55}
 .detail-meaning p,.detail-note p{font-size:12px;line-height:1.8;margin:6px 0 0}
 @media(max-width:640px){.fixed-venue{grid-template-columns:1fr;gap:12px}.fixed-venue-action{text-align:left}}
+
+.fixed-venue-list{display:grid;gap:12px;margin-bottom:28px}
+.fixed-venue-list .fixed-venue{margin-bottom:0}
+.glass-venue{background:linear-gradient(135deg,#324f57,#523f69)}
+.glass-venue .fixed-venue-badge{background:#f2d5ff}
+.glass-venue .fixed-venue-main small{color:#f2d5ff}
