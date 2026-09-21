@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f1eee5">
+  <meta name="description" content="小小職人體驗家長報名頁">
+  <title>家長報名｜小小職人體驗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="register-body">
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="./index.html">
+      <span class="brand-mark">小</span>
+      <span><b>小小職人體驗</b><small>PARENT REGISTRATION</small></span>
+    </a>
+    <nav><a href="./index.html#activities">活動總覽</a><a class="nav-cta" href="./index.html">回首頁</a></nav>
+  </header>
+
+  <main class="register-shell">
+    <a class="register-back" href="./index.html#activities">← 回活動總覽</a>
+    <div class="register-layout">
+      <aside class="register-summary" id="registerSummary"></aside>
+
+      <section class="register-card">
+        <div class="register-step" aria-label="報名步驟"><span class="active"></span><span></span><span></span></div>
+        <div id="registrationApp"></div>
+      </section>
+    </div>
+  </main>
+  <script src="./register.js"></script>
+</body>
+</html>
