@@ -33,7 +33,7 @@ function renderActivities(){
     const hay=[item.title,item.cat,item.desc,item.partner,...item.tags].join(" ").toLowerCase();
     return matchCat&&(!q||hay.includes(q));
   });
-  count.textContent=`顯示 ${data.length} 個體驗方向 · 尚未確認的資訊會標示為待確認`;
+  count.textContent=`顯示 ${data.length} 個活動 · 點「立即報名」進入家長報名頁`;
   empty.hidden=data.length!==0;
   grid.innerHTML=data.map(item=>`
     <article class="exp-card" tabindex="0" data-id="${item.id}" aria-label="查看 ${item.title} 詳情">
@@ -43,7 +43,7 @@ function renderActivities(){
       <h3>${item.title}</h3>
       <p>${item.desc}</p>
       <div class="exp-tags">${item.tags.map(t=>`<span>${t}</span>`).join("")}</div>
-      <div class="exp-bottom"><span>${item.partner}</span><b>＋</b></div>
+      <div class="exp-bottom"><span>${item.partner}</span><a class="card-register" href="./register.html?activity=${item.id}" onclick="event.stopPropagation()">立即報名 →</a></div>
     </article>`).join("");
   grid.querySelectorAll(".exp-card").forEach(card=>{
     card.addEventListener("click",()=>openActivity(card.dataset.id));
@@ -72,7 +72,7 @@ function openActivity(id){
     </div>
     <div class="detail-task"><small>我們想讓孩子完成</small><p>${item.task}</p></div>
     <p class="detail-safety">正式活動只會在合作職人、場地、工具、適齡條件與必要安全事項確認後公開。這張卡目前是體驗提案，不是正式開課資訊。</p>
-    <a class="btn primary wide" href="#join" onclick="document.querySelector('#activityDialog').close()">我對這個體驗有興趣 →</a>`;
+    <a class="btn primary wide" href="./register.html?activity=${item.id}">立即進入家長報名 →</a>`;
   activityDialog.showModal();
 }
 
